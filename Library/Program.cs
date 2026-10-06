@@ -1,17 +1,14 @@
 ﻿using Library;
+using System.Reflection;
 
-Book book = new Book();
+Book book = new Book("C# for beginners", "Bill Gates", 12346789);
 
 // This is info for the book class
-book.Title = "C# for beginners";
-book.Author = "Bill Gates";
-book.ISBN = 12346789;
 
 book.DisplayInfo();  
 
 // Add another book
-Book book1 = new Book();
-book1.Title = "Methods and Classes";
-book1.Author = "Microsoft";
-book1.ISBN = 987654321;
+Book book1 = new Book("Methods and Classes", "Microsoft", 987654321);
+Book book2 = new Book("Joshua Clarkson", "OP", 42069);
 book1.DisplayInfo();
+book2.DisplayInfo();

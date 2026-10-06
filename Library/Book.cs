@@ -6,9 +6,18 @@ namespace Library
 {
     public class Book
     {
-        public string Title;
-        public string Author;
-        public int ISBN;
+        private string Title;
+        private string Author;
+        private int ISBN;
+
+        //Parameterised constructor
+        public Book(string bookTitle, string bookAuthor, int bookISBN)
+        {
+            Title = bookTitle;
+            Author = bookAuthor;
+            ISBN = bookISBN;
+        }
+
 
         public void DisplayInfo()
         {
