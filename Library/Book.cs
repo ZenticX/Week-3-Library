@@ -16,13 +16,24 @@ namespace Library
         public string Title
         {
             get { return _title; }
-            set { _title = value; }
-        }
+            set
+            {
+                //Check if any incoming char is a digit
+                if (!value.Any(char.IsDigit))
+                {
+                    _title = value;
+                }
+                else
+                {
+                    Console.WriteLine("Cannot have numbers in the title");
+                }
+            }
+         }
 
         public string Author
         {
             get { return _author; }
-            set { _author = value; }
+            set { _author = value;}
         }
 
         public int ISBN

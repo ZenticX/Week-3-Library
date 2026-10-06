@@ -1,7 +1,7 @@
 ﻿using Library;
 using System.Reflection;
 
-Book book = new Book("C# for beginners", "Bill Gates", 12346789);
+Book book = new Book("C# for beginners1", "Bill Gates", 12346789);
 
 // This is info for the book class
 
